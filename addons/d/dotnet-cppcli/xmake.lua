@@ -7,6 +7,8 @@ package("dotnet-cppcli")
     add_urls("https://github.com/microdee/xmake.dotnet-cppcli/archive/refs/tags/$(version).tar.gz",
              "https://github.com/microdee/xmake.dotnet-cppcli.git")
     add_versions("v1.0.0", "13439ae461f0e988be4251afac27696afc66dd3cc5bfe34c61dd7eb3018e9dc9")
+    
+    add_deps("rats-utils", {kind = "addon"})
 
     on_test(function (package)
         assert(package:has_addon({
