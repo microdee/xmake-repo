@@ -8,8 +8,7 @@ package("rats-utils")
         "https://github.com/microdee/xmake.rats-utils/archive/refs/tags/$(version).tar.gz",
         "https://github.com/microdee/xmake.rats-utils.git"
     )
-    add_versions("v1.0.0", "82c8dfe3844fc4768dd4c8df126087de4677a9815ffa36b02a1f1b146b4d55e4")
-    add_versions("v1.0.1", "70d36c7838eddf6f1e9a4addb78b71cf5032ce2bd101f07c8012557e9a537a3b")
+    add_versions("v1.0.2", "9b66aafb357a3ea17a553e87e3d1b3923a557413e331a7a803781f379ed92095")
 
     on_test(function (package)
         assert(package:has_addon({
